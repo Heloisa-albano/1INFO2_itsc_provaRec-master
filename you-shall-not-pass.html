@@ -1,0 +1,71 @@
+<meta charset="UTF-8">
+<script>
+    // SWITCH CASE SWITCH CASE SWITCH CASE SWITCH CASE
+    /*
+    Problema: Considere que uma pessoa está diante de uma máquina de compra, que possui para venda algumas bebidas distintas, tais como:
+    Refrigerante (RF): R$ 4,50
+    Água Sem Gás (AS): R$ 2,90
+    Água Com Gás (AC): R$ 3,00
+    Suco Natural (SN): R$ 3,90
+    O usuário informará uma das opções citadas acima para compra.
+    Pergunte também a forma de pagamento. Caso a forma de pagamento seja em dinheiro (D), e a bebida foi ou refrigerante ou suco natural,
+     haverá desconto de 20%. Contudo, caso a forma de pagamento seja no Cartão (C), e a bebida foi água (Com ou Sem Gás), haverá desconto
+     de apenas 10%. Para as demais opções, não haverá desconto no preço.
+    Apresente o resultado final a ser pago pelo comprador da bebida.
+    */
+
+    //Entrada
+    const bebida = prompt("Informe a bebida que deseja tomar, RF(refrigerante), AS(Água sem gás), AC(Água com gás), SN(suco natural):")
+    const pagamento = prompt("digite D(dinheiro) ou C(cartão)")
+
+    //Processamento
+    const desconto1 = 4.50 - (4.50 * 20/100)
+    const desconto2 = 3.90 - (3.90 * 20/100)
+    const desconto3 = 3 - (3 * 10/100)
+    const desconto4 = 2.90 - (2.90 * 10/100)
+
+
+    switch (bebida) {
+        case "RF":
+            if (pagamento === "D") {
+                alert(`Valor final: R$${desconto1}`)
+            }else{
+                alert("Valor final: R$$4,50")
+            }
+            break;
+        case "SN":
+            if (pagamento === "D") {
+                alert(`Valor final: R$${desconto2}`)
+            }else{
+                alert("Valor final: R$3,90")
+            }
+            break;
+        case "Suco Natural":
+            if (pagamento === "D") {
+                alert(`Valor final: R$${desconto2}`)
+            }else{
+                alert("Valor final: R$3,90")
+            }
+            break;
+        case "AC":
+            if (pagamento === "C") {
+                alert(`Valor final: R$${desconto3}`)
+            }else{
+                alert("Valor final: R$3")
+            }
+            break;
+        case "AS":
+            if (pagamento === "C") {
+                alert(`Valor final: R$${desconto4}`)
+            }else{
+                alert("Valor final: R$2,90")
+            }
+        break;        
+        default:
+            alert("Valor Inválido")
+            break;
+    }
+
+    //Saída
+
+</script>

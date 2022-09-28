@@ -1,0 +1,36 @@
+<meta charset="UTF-8">
+<script>
+    // SWITCH CASE SWITCH CASE SWITCH CASE SWITCH CASE
+    /*
+    Problema: Peça para o usuário informar qual streaming consome, que poderá ser Netflix (NE), Amazon Prime (AP), Spotify (SP), 
+    YouTube (YT).
+    De acordo com o streaming informado pelo usuário, apresente a seguinte mensagem:
+    Caso seja Netflix (NE), o programa mostrará a mensagem: "Filmes e Séries".
+    Caso seja Amazon Prime (AP), o programa mostrará a mensagem "Filmes e Séries".
+    Caso seja Spotify (SP), o programa mostrará a mensagem "Músicas".
+    Caso seja YouTube (YT), o programa mostrará a mensagem "Influencers".
+    */
+
+    //Entrada
+    const streaming = prompt("Diga qual streaming consome no dia a dia, NE(netflix), AP(amazon prime), SP(spotify), YT(youtube): ")
+
+    //Processamento
+    switch (streaming) {
+        case "NE":
+            alert("Filmes e Séries")
+            break;
+        case "AP":
+            alert("Filmes e Séries")
+            break;
+        case "SP":
+            alert("Músicas")
+        case "YT":
+            alert("Influencers")
+        default:
+            alert("Resposta inválida")
+            break;
+    }
+
+    //Saída
+
+</script>

@@ -1,0 +1,24 @@
+<meta charset="UTF-8">
+<script>
+    // OPERADOR TERNÁRIO OPERADOR TERNÁRIO OPERADOR TERNÁRIO
+    /*
+    Problema: Peça para o usuário informar o valor cobrado para consulta no hospital veterinário, durante o horário comercial. 
+    Contudo, caso a consulta seja realizada durante a noite, terá um acréscimo de 20%.
+    E, caso a consulta seja realizada durante a madrugada, haverá um acréscimo de 50%.
+    Portanto, pergunte também ao usuário se a consulta foi realizada em horário normal 
+    ("D"), durante a noite ("N") ou durante a madrugada ("M").
+    Apresente o preço final que será cobrado pela consulta.
+    */
+
+    //Entrada
+    const preco = Number(prompt("Informe o valor cobrado no hospital veterinario:"));
+    const horario = prompt("Digite M(matutino) ou N(noturno): ");
+
+    //Processamento
+    const acrecimo1 = preco + (preco * 20/100);
+    const acrecimo2 = preco + (preco * 50/100);
+    (horario === "M")?alert(`Valor final: ${acrescimo1}`)
+    :alert(`Valor final: ${acrescimo2}`);
+    //Saída
+
+</script>

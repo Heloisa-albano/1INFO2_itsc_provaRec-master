@@ -1,0 +1,28 @@
+<meta charset="UTF-8">
+<script>
+    // OPERADOR TERNÁRIO OPERADOR TERNÁRIO OPERADOR TERNÁRIO
+    /*
+    Problema: Peça para o usuário informar o preço atual do livro e o seu ano de publicação. 
+    Após, calcule o preço final, de acordo com a regra descrita abaixo.
+    - Se o livro foi publicado antes de 2010 (inclusive), será dado um desconto de R$ 10,00.
+    - Se o livro foi publicado antes de 2020 (inclusive), será dado um desconto de R$ 7,00.
+    - Se o livro foi publicado após 2020, o desconto será menor, de apenas R$ 3,00.
+    Peça para o usuário informar o preço atual do livro e calcule o preço final, de acordo com a regra descrita acima.
+    */
+
+    //Entrada
+
+    const preco = Number(prompt("Informe o valor do livro:"))
+    const ano = Number(prompt("Informe o ano de publicação:"));
+
+    //Processamento
+    const conta1 = preco - 10;
+    const conta2 = preco - 7;
+    const conta3 = preco - 3;
+    (ano < 2010)?alert(`O valor final é: ${conta1}`)
+    :(ano <= 2020)?alert(`O valor final é: ${conta2}`)
+    :alert(`O valor final é: ${conta3}`);
+
+    //Saída
+
+</script>
